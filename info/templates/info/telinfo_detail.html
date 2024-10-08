@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+<div class="container">
+    
+<div class="card">
+  <div class="card-header">
+      {{ tel_info.name }}
+  </div>
+  <div class="card-body">
+      
+      <p class="card-text"><strong> ID: {{ tel_info.id }}</strong></p>
+    <p class="card-text"><strong>部门: {{ tel_info.dep }}</strong></p>  
+    <p class="card-text"><strong>使用人: {{ tel_info.user }} </strong></p>  
+    <p class="card-text"><strong>邮箱: {{ tel_info.email }}</strong></p>   
+      
+    <a href="{% url 'telephone:index' %}" class="btn btn-primary">返回</a>
+  </div>
+</div>
+    
+</div>
+{% endblock %}

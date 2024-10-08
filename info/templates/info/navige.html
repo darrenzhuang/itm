@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+     <div class="container">
+        <h2>欢迎使用Django框架</h2>
+    <ul>
+        <li><a href="{% url 'merge:merge' %}">1.PDF合并</a></li>
+        <li><a href="{% url 'merge:upload' %}">2.文件上传</a></li>
+        <li><a href="{% url 'merge:merge_pdfs' %}">3.PDF合并1</a></li>
+        <li><a href="{% url 'ping:ping' %}">4.ping检测</a></li>
+        <li><a href="{% url 'portscanner:portscanner' %}">5.端口检测</a></li>
+        <li><a href="{% url 'telephone:index' %}">6.固话清单</a></li>
+        
+    </ul>
+     </div>
+{% endblock %}
+
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Django框架实例</title>#}
+{#</head>#}
+{#<body>#}
+{#    <h2>欢迎使用Django框架</h2>#}
+{#    <ul>#}
+{#        <li><a href="{% url 'merge:merge' %}">1.PDF合并</a></li>#}
+{#        <li><a href="{% url 'merge:upload' %}">2.文件上传</a></li>#}
+{#        <li><a href="{% url 'merge:merge_pdfs' %}">3.PDF合并1</a></li>#}
+{#        <li><a href="{% url 'ping:ping' %}">4.ping检测</a></li>#}
+{#        <li><a href="{% url 'portscanner:portscanner' %}">5.端口检测</a></li>#}
+{#        <li><a href="{% url 'telephone:index' %}">6.固话清单</a></li>#}
+{#        #}
+{#    </ul>#}
+{#</body>#}
+{#</html>#}

@@ -86,7 +86,7 @@ DATABASES = {
         'NAME': 'itm',
         'USER': 'root',
         'PASSWORD': 'Feiyu.com',
-        'HOST': 'localhost',
+        'HOST': '192.168.10.244',
         'PORT': '3306',
     }
 }
